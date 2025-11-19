@@ -1,0 +1,50 @@
+// ---------------------
+// VARIABLES
+// ---------------------
+$bg-gradient: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+$primary: #6366f1;
+$primary-dark: #5855eb;
+$text-main: #1e293b;
+
+
+// ---------------------
+// GLOBAL
+// ---------------------
+body {
+  background: $bg-gradient;
+  font-family: 'Inter', sans-serif;
+  color: $text-main;
+}
+
+
+// ---------------------
+// BUTTON MIXIN
+// ---------------------
+@mixin buttonGradient($from, $to) {
+  background: linear-gradient(135deg, $from, $to);
+  color: white;
+  padding: .75rem 1rem;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+
+// ---------------------
+// MOVIE CARD
+// ---------------------
+.movie-card {
+  border-radius: 20px;
+  background: white;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+}
+
+.add-favorite {
+  @include buttonGradient(#6366f1, #8b5cf6);
+}
+
+.remove-favorite {
+  @include buttonGradient(#ef4444, #f97316);
+}

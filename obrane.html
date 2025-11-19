@@ -1,0 +1,55 @@
+ <!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite movies</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- <script src="/application/json"></script> -->
+  <script src="/Film/scripts.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <nav class="nav">
+        <div class="logo" id="site-title">Mitfilm</div>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Movies</a></li>
+          <li><a href="obrane.html" class="nav-link active">Favorites</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div id="favorites-page" class="page active">
+        <h1 class="page-title" id="favorites-title">Favorite movies</h1>
+
+        <div id="favorites-content">
+          <div class="empty-state" id="empty-favorites">
+            <div class="empty-icon">💜</div>
+            <div class="empty-text" id="empty-favorites-text">You have no movies yet</div>
+          </div>
+
+          <div class="movies-grid" id="favorites-grid" style="display: none;"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p id="footer-text">Mitfilm · 2025</p>
+    </footer>
+
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
