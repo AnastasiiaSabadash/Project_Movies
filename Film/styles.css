@@ -234,11 +234,11 @@ body::before {
     position: fixed;
     top: 2rem;
     right: 2rem;
-    background: white;
+    background: #531e82;
     padding: 1rem 1.5rem;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    border-left: 4px solid #10b981;
+    border-left: 4px solid #FFF;
     transform: translateX(400px);
     transition: all 0.3s ease;
     z-index: 1000;
