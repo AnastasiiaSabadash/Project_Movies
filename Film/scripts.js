@@ -76,10 +76,19 @@ function createMovieCard(movie, isFavorite) {
         <div class="movie-info">
             <h3 class="movie-title">${movie.title}</h3>
             <p class="movie-genre">${movie.genre}</p>
-
+            
             <button class="movie-button ${isFavorite ? 'remove-favorite' : 'add-favorite'}"
-                onclick="${isFavorite ? `removeFavorite('${movie.id}')` : `addFavorite('${movie.id}')`}">
-                ${isFavorite ? 'Видалити' : '+ В обране'}
+            onclick="${isFavorite ? `removeFavorite('${movie.id}')` : `addFavorite('${movie.id}')`}">
+            ${
+                isFavorite 
+                ? 'Видалити' 
+                : `<span class="icon-wrap">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+                </span>
+                В обране`
+            }
             </button>
         </div>
     `;

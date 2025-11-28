@@ -189,6 +189,19 @@ body::before {
     font-size: 0.9rem;
 }
 
+.icon-wrap {
+    display: inline-flex;
+    align-items: center; 
+    margin-right: 6px;
+    transform: translateY(3.5px); 
+}
+
+.icon-wrap svg {
+    width: 18px;
+    height: 18px;
+    stroke: white;
+}
+
 .add-favorite {
     background: linear-gradient(135deg, #6366f1, #8b5cf6);
     color: white;
