@@ -239,3 +239,53 @@ function showToast(text, type = 'success') {
     setTimeout(() => toast.classList.remove('show'), 3000);
 }
 
+
+// ===========================
+// FILTERS WINDOW TOGGLE
+// ===========================
+// Кнопка відкриття/закриття фільтрів
+const filterBtn = document.getElementById("filterBtn");
+const filtersWindow = document.getElementById("filtersWindow");
+
+// Кнопки Apply та Clear
+const applyBtn = document.getElementById("applyFiltersBtn");
+const clearBtn = document.getElementById("clearFiltersBtn");
+
+// Поле для року
+const yearInput = document.getElementById("yearFrom");
+
+// Всі чекбокси жанрів
+const genreCheckboxes = document.querySelectorAll('input[name="genre"]');
+
+
+// 🔹 Показати / сховати вікно
+filterBtn.addEventListener("click", () => {
+  filtersWindow.classList.toggle("hidden");
+});
+
+
+// 🔹 Apply Filters — тихо збираємо вибрані фільтри
+applyBtn.addEventListener("click", () => {
+  const selectedGenres = [];
+
+  genreCheckboxes.forEach(cb => {
+    if (cb.checked) {
+      selectedGenres.push(cb.value);
+    }
+  });
+
+  const selectedYear = yearInput.value;
+
+  // Тут ти можеш вставити свій код фільтрації фільмів
+  // filterMovies(selectedGenres, selectedYear);
+});
+
+
+// 🔹 Clear Filters — тихо очищаємо все
+clearBtn.addEventListener("click", () => {
+  genreCheckboxes.forEach(cb => cb.checked = false);
+  yearInput.value = "";
+
+  // Тут можна викликати твою функцію, щоб показати всі фільми
+  // resetFilters();
+});

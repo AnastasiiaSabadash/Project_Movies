@@ -29,31 +29,42 @@
             <button class="filter-btn" id="filterBtn">Filters</button>
           </div>
 
-          <div class="filters-window " id="filtersWindow">
+          <div class="filters-window hidden" id="filtersWindow">
             <div class="filter-section">
             <div class="filter-header">Genre</div>
-               <div class="filter-text">Фантастика</div>
-               <div class="filter-text">Антиутопія</div>
-               <div class="filter-text">Драма</div> 
-               <div class="filter-text">Мелодрама</div>
-               <div class="filter-text">Трилер</div>
-               <div class="filter-text">Бойовик</div>
-                <div class="filter-text">Пригоди</div>
-                <div class="filter-text">Комедія</div>
-                <div class="filter-text">Кримінал</div>
-                <div class="filter-text">Фентезі</div>
-                <div class="filter-text">Екшн</div>
-                <div class="filter-text">Історичний</div>
+               <label class="option-button-label">
+                <input type="checkbox" name="genre" value="фантастика"> Фантастика</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="антиутопія"> Антиутопія</label>
+                <label class="option-button-label"> 
+                <input type="checkbox" name="genre" value="драма"> Драма</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="мелодрама"> Мелодрама</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="трилер"> Трилер</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="бойовик"> Бойовик</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="пригоди"> Пригоди</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="комедія"> Комедія</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="кримінал"> Кримінал</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="фентезі"> Фентезі</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="екшн"> Екшн</label>
+                <label class="option-button-label">   
+                <input type="checkbox" name="genre" value="історичний"> Історичний</label>
             </div>
             <div class="filter-header">Year</div>
                 <div class="filter-section">
                   <input type="number" id="yearFrom" class="year-input" placeholder="Year">
                 </div>
             <button class="filter-btn" id="applyFiltersBtn">Apply Filters</button>
+            <button class="filter-btn" id="clearFiltersBtn">Clear Filters</button>
           </div>
-          </div>
-
-        
+         
         <ul class="nav-links">
           <li><a href="index.html" class="nav-link active">Movies</a></li>
           <li><a href="obrane.html" class="nav-link">Favorites</a></li>
