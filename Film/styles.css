@@ -388,3 +388,52 @@ display: block;
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+
+.search-filter-btn {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+}
+
+.search-input{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.filter-btn{
+    background: transparent;
+    color: #554667;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    color: #6366f1;
+    background: rgba(99, 102, 241, 0.1);
+}
+
+
+.filters-window{
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #1b002b;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    z-index: 200;
+}
+
+

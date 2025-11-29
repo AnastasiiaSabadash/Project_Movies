@@ -2,26 +2,26 @@
 // SAMPLE MOVIES
 // ===========================
 const sampleMovies = [
-    { id: '1', title: 'Той,що біжить лабіринтом', genre: 'Наукова фантастика', poster:'movies/Той,що біжить лабіринтом.jpg' },
-    { id: '2', title: 'Сутінки', genre: 'Бойовик', poster: 'movies/Сутінки.jpg' },
-    { id: '3', title: 'Час', genre: 'Драма', poster: 'movies/Час.jpg' },
-    { id: '4', title: 'Формула 1', genre: 'Наукова фантастика', poster: 'movies/Формула 1.jpg' },
-    { id: '5', title: 'Ілюзія обману', genre: 'Романтика', poster: 'movies/Ілюзія обману.jpg' },
-    { id: '6', title: 'Загублене місто', genre: 'Фантастика', poster: 'movies/Загублене місто.jpg' },
-    { id: '7', title: 'Щасливого Різдва', genre: 'Трилер', poster: 'movies/Щасливого Різдва.jpg' },
-    { id: '8', title: 'Дюна', genre: 'Супергерої', poster: 'movies/Дюна.jpg' },
-    { id: '9', title: 'Погані хлопці', genre: 'Анімація', poster: 'movies/Погані хлопці.jpg' },
-    { id: '10', title: 'Кінгсмен:Золоте кільце', genre: 'Історичний', poster: 'movies/КінгсменЗолоте кільце.jpg' },
-    { id: '11', title: 'Диявол носить Прада', genre: 'Кримінал', poster: 'movies/Диявол носить Прада.jpg' },
-    { id: '12', title: 'Оппенгеймер', genre: 'Фантастика', poster: 'movies/Оппенгеймер.jpg' },
-    { id: '13', title: 'Титанік', genre: 'Фантастика', poster: 'movies/Титанік.jpg' },
-    { id: '14', title: 'Круелла', genre: 'Фантастика', poster: 'movies/Круелла.jpg' },
-    { id: '15', title: 'Вік Аделайн', genre: 'Фантастика', poster: 'movies/Вік Аделайн.jpg' },
-    { id: '16', title: 'Одинадцять друзів оушена', genre: 'Фантастика', poster: 'movies/Одинадцять друзів оушена.jpg' },
-    { id: '17', title: 'На західному фронті без змін', genre: 'Фантастика', poster: 'movies/На західному фронті без змін.jpg' },
-    { id: '18', title: '1917', genre: 'Фантастика', poster: 'movies/1917.jpg' },
-    { id: '19', title: 'Барбі', genre: 'Фантастика', poster: 'movies/Барбі.jpg' },
-    { id: '20', title: 'Форсаж', genre: 'Фантастика', poster: 'movies/Форсаж.jpg' },
+    { id: '1', title: 'Той,що біжить лабіринтом', genre: 'Фантастика', poster:'movies/Той,що біжить лабіринтом.jpg' },
+    { id: '2', title: 'Сутінки', genre: 'Драма', poster: 'movies/Сутінки.jpg' },
+    { id: '3', title: 'Час', genre: 'Фантастика', poster: 'movies/Час.jpg' },
+    { id: '4', title: 'Формула 1', genre: 'Спортивна драма', poster: 'movies/Формула 1.jpg' },
+    { id: '5', title: 'Ілюзія обману', genre: 'Бойовик', poster: 'movies/Ілюзія обману.jpg' },
+    { id: '6', title: 'Загублене місто', genre: 'Пригоди', poster: 'movies/Загублене місто.jpg' },
+    { id: '7', title: 'Щасливого Різдва', genre: 'Драма', poster: 'movies/Щасливого Різдва.jpg' },
+    { id: '8', title: 'Дюна', genre: 'Фантастика', poster: 'movies/Дюна.jpg' },
+    { id: '9', title: 'Погані хлопці', genre: 'Кримінал', poster: 'movies/Погані хлопці.jpg' },
+    { id: '10', title: 'Кінгсмен:Золоте кільце', genre: 'Бойовик', poster: 'movies/КінгсменЗолоте кільце.jpg' },
+    { id: '11', title: 'Диявол носить Прада', genre: 'Комедія', poster: 'movies/Диявол носить Прада.jpg' },
+    { id: '12', title: 'Оппенгеймер', genre: 'Історичний', poster: 'movies/Оппенгеймер.jpg' },
+    { id: '13', title: 'Титанік', genre: 'Мелодрами', poster: 'movies/Титанік.jpg' },
+    { id: '14', title: 'Круелла', genre: 'Пригоди', poster: 'movies/Круелла.jpg' },
+    { id: '15', title: 'Вік Аделайн', genre: 'Мелодрами', poster: 'movies/Вік Аделайн.jpg' },
+    { id: '16', title: 'Одинадцять друзів оушена', genre: 'Кримінал', poster: 'movies/Одинадцять друзів оушена.jpg' },
+    { id: '17', title: 'На західному фронті без змін', genre: 'Військова драма', poster: 'movies/На західному фронті без змін.jpg' },
+    { id: '18', title: '1917', genre: 'Військова драма', poster: 'movies/1917.jpg' },
+    { id: '19', title: 'Барбі', genre: 'Комедія', poster: 'movies/Барбі.jpg' },
+    { id: '20', title: 'Форсаж', genre: 'Кримінал', poster: 'movies/Форсаж.jpg' },
 ];
 
 
@@ -238,3 +238,4 @@ function showToast(text, type = 'success') {
     toast.className = `toast ${type} show`;
     setTimeout(() => toast.classList.remove('show'), 3000);
 }
+
