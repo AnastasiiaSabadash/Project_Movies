@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mitfilm</title>
 
+  <link rel="icon" href="icon_mit.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
@@ -13,7 +14,53 @@
   <div class="container">
     <header class="header">
       <nav class="nav">
-        <div class="logo" id="site-title">Mitfilm</div>
+        <div class="logo" id="site-title">
+         <img src="icon_mit.png" alt="icon" class="logo-icon">
+            <span>Mitfilm</span>
+        </div>
+        
+        <div class="search-filter-btn" id="searchBtn">
+            <img src="/Film/movies/icons8-search (1).svg" alt="search" class="search-icon">
+            <input type="text" placeholder="Search" class="search-input" id="searchInput">
+            <button class="filter-btn" id="filterBtn">Filters</button>
+          </div>
+
+          <div class="filters-window hidden" id="filtersWindow">
+            <div class="filter-section">
+            <div class="filter-header">Genre</div>
+               <label class="option-button-label">
+                <input type="checkbox" name="genre" value="фантастика"> Фантастика</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="антиутопія"> Антиутопія</label>
+                <label class="option-button-label"> 
+                <input type="checkbox" name="genre" value="драма"> Драма</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="мелодрама"> Мелодрама</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="трилер"> Трилер</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="бойовик"> Бойовик</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="пригоди"> Пригоди</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="комедія"> Комедія</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="кримінал"> Кримінал</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="фентезі"> Фентезі</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="екшн"> Екшн</label>
+                <label class="option-button-label">   
+                <input type="checkbox" name="genre" value="історичний"> Історичний</label>
+            </div>
+            <div class="filter-header">Year</div>
+                <div class="filter-section">
+                  <input type="number" id="yearFrom" class="year-input" placeholder="Year">
+                </div>
+            <button class="filter-btn" id="applyFiltersBtn">Apply Filters</button>
+            <button class="filter-btn" id="clearFiltersBtn">Clear Filters</button>
+          </div>
+
         <ul class="nav-links">
           <li><a href="index.html" class="nav-link active">Movies</a></li>
             <li><a href="obrane.html" class="nav-link">Favorites</a></li>
@@ -29,7 +76,7 @@
     </main> 
 
  <main class="movie-detail">
-    <!-- <img src="movies/Круелла.jpg" alt="Круелла" class="movie-poster"> -->
+    <img src="movies/Круелла.jpg" alt="Круелла" class="movie-poster">
     <h2 class="movie-genre">Жанри: Драми, Пригоди, Комедії, Кримінал</h2>
     <h2 class="movie-genre">Рік: 2021</h2>
     <h2 class="movie-genre">Країни: Велика Британія, США</h2>

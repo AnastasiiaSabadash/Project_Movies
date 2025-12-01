@@ -131,6 +131,7 @@ body::before {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     border: 1px solid rgba(148, 163, 184, 0.1);
+    text-decoration: none;
 }
 
 .movie-card:hover {
@@ -208,7 +209,6 @@ body::before {
     height: 18px;
     stroke: white;
 }
-
 .icon-heart svg {
     width: 18px;   
     height: 18px;   
@@ -444,5 +444,3 @@ display: block;
 .hidden {
     display: none;
 }
-
-

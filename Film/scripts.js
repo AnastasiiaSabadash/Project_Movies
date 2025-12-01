@@ -1,29 +1,28 @@
-// ===========================
-// SAMPLE MOVIES
+ // ===========================
+// SAMPLE MOVIES (ОНОВЛЕНО)
 // ===========================
 const sampleMovies = [
-    { id: '1', title: 'Той,що біжить лабіринтом', genre: 'Фантастика', poster:'movies/Той,що біжить лабіринтом.jpg' },
-    { id: '2', title: 'Сутінки', genre: 'Драма', poster: 'movies/Сутінки.jpg' },
-    { id: '3', title: 'Час', genre: 'Фантастика', poster: 'movies/Час.jpg' },
-    { id: '4', title: 'Формула 1', genre: 'Спортивна драма', poster: 'movies/Формула 1.jpg' },
-    { id: '5', title: 'Ілюзія обману', genre: 'Бойовик', poster: 'movies/Ілюзія обману.jpg' },
-    { id: '6', title: 'Загублене місто', genre: 'Пригоди', poster: 'movies/Загублене місто.jpg' },
-    { id: '7', title: 'Щасливого Різдва', genre: 'Драма', poster: 'movies/Щасливого Різдва.jpg' },
-    { id: '8', title: 'Дюна', genre: 'Фантастика', poster: 'movies/Дюна.jpg' },
-    { id: '9', title: 'Погані хлопці', genre: 'Кримінал', poster: 'movies/Погані хлопці.jpg' },
-    { id: '10', title: 'Кінгсмен:Золоте кільце', genre: 'Бойовик', poster: 'movies/КінгсменЗолоте кільце.jpg' },
-    { id: '11', title: 'Диявол носить Прада', genre: 'Комедія', poster: 'movies/Диявол носить Прада.jpg' },
-    { id: '12', title: 'Оппенгеймер', genre: 'Історичний', poster: 'movies/Оппенгеймер.jpg' },
-    { id: '13', title: 'Титанік', genre: 'Мелодрами', poster: 'movies/Титанік.jpg' },
-    { id: '14', title: 'Круелла', genre: 'Пригоди', poster: 'movies/Круелла.jpg' },
-    { id: '15', title: 'Вік Аделайн', genre: 'Мелодрами', poster: 'movies/Вік Аделайн.jpg' },
-    { id: '16', title: 'Одинадцять друзів оушена', genre: 'Кримінал', poster: 'movies/Одинадцять друзів оушена.jpg' },
-    { id: '17', title: 'На західному фронті без змін', genre: 'Військова драма', poster: 'movies/На західному фронті без змін.jpg' },
-    { id: '18', title: '1917', genre: 'Військова драма', poster: 'movies/1917.jpg' },
-    { id: '19', title: 'Барбі', genre: 'Комедія', poster: 'movies/Барбі.jpg' },
-    { id: '20', title: 'Форсаж', genre: 'Кримінал', poster: 'movies/Форсаж.jpg' },
+    { id: '1', title: 'Той,що біжить лабіринтом', genre: 'Фантастика', poster:'movies/Той,що біжить лабіринтом.jpg', detailPage: 'film1.html' },
+    { id: '2', title: 'Сутінки', genre: 'Драма', poster: 'movies/Сутінки.jpg', detailPage: 'film2.html' },
+    { id: '3', title: 'Час', genre: 'Фантастика', poster: 'movies/Час.jpg', detailPage: 'film3.html' },
+    { id: '4', title: 'Формула 1', genre: 'Спортивна драма', poster: 'movies/Формула 1.jpg', detailPage: 'film4.html' },
+    { id: '5', title: 'Ілюзія обману', genre: 'Бойовик', poster: 'movies/Ілюзія обману.jpg', detailPage: 'film5.html' },
+    { id: '6', title: 'Загублене місто', genre: 'Пригоди', poster: 'movies/Загублене місто.jpg', detailPage: 'film6.html' },
+    { id: '7', title: 'Щасливого Різдва', genre: 'Драма', poster: 'movies/Щасливого Різдва.jpg', detailPage: 'film7.html' },
+    { id: '8', title: 'Дюна', genre: 'Фантастика', poster: 'movies/Дюна.jpg', detailPage: 'film8.html' },
+    { id: '9', title: 'Погані хлопці', genre: 'Кримінал', poster: 'movies/Погані хлопці.jpg', detailPage: 'film9.html' },
+    { id: '10', title: 'Кінгсмен:Золоте кільце', genre: 'Бойовик', poster: 'movies/КінгсменЗолоте кільце.jpg', detailPage: 'film10.html' },
+    { id: '11', title: 'Диявол носить Прада', genre: 'Комедія', poster: 'movies/Диявол носить Прада.jpg', detailPage: 'film11.html' },
+    { id: '12', title: 'Оппенгеймер', genre: 'Історичний', poster: 'movies/Оппенгеймер.jpg', detailPage: 'film12.html' },
+    { id: '13', title: 'Титанік', genre: 'Мелодрами', poster: 'movies/Титанік.jpg', detailPage: 'film13.html' },
+    { id: '14', title: 'Круелла', genre: 'Пригоди', poster: 'movies/Круелла.jpg', detailPage: 'film14.html' },
+    { id: '15', title: 'Вік Аделайн', genre: 'Мелодрами', poster: 'movies/Вік Аделайн.jpg', detailPage: 'film15.html' },
+    { id: '16', title: 'Одинадцять друзів оушена', genre: 'Кримінал', poster: 'movies/Одинадцять друзів оушена.jpg', detailPage: 'film16.html' },
+    { id: '17', title: 'На західному фронті без змін', genre: 'Військова драма', poster: 'movies/На західному фронті без змін.jpg', detailPage: 'film17.html' },
+    { id: '18', title: '1917', genre: 'Військова драма', poster: 'movies/1917.jpg', detailPage: 'film18.html' },
+    { id: '19', title: 'Барбі', genre: 'Комедія', poster: 'movies/Барбі.jpg', detailPage: 'film19.html' },
+    { id: '20', title: 'Форсаж', genre: 'Кримінал', poster: 'movies/Форсаж.jpg', detailPage: 'film20.html' },
 ];
-
 
 
 // ===========================
@@ -289,3 +288,71 @@ clearBtn.addEventListener("click", () => {
   // Тут можна викликати твою функцію, щоб показати всі фільми
   // resetFilters();
 });
+
+// ===========================
+// CREATE MOVIE CARD (ОНОВЛЕННЯ ДЛЯ 20 СТОРІНОК)
+// ===========================
+function createMovieCard(movie, isFavorite = false, isFavoritesPage = false) {
+    // Змінюємо 'div' на 'a' для посилання
+    const card = document.createElement('a'); 
+    card.className = 'movie-card';
+    card.href = movie.detailPage; // ВИКОРИСТОВУЄМО ШЛЯХ ДО СТАТИЧНОЇ СТОРІНКИ
+
+    // Клас та текст кнопки (ваш існуючий код)
+    let buttonClass = 'add-favorite';
+    let buttonText = `<span class="icon-wrap">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                        </svg>
+                      </span>В обране`;
+
+    if (isFavorite) {
+        if (isFavoritesPage) {
+            buttonClass = 'remove-favorite'; 
+            buttonText = 'Видалити';
+        } else {
+            buttonClass = 'favorited-main'; 
+            buttonText = `<span class="icon-heart">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+                                2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09 
+                                C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5 
+                                c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                          </span>В обраному`;
+        }
+    }
+
+    card.innerHTML = `
+        <div class="movie-poster">
+            <img src="${movie.poster}" alt="${movie.title}">
+        </div>
+        <div class="movie-info">
+            <h3 class="movie-title">${movie.title}</h3>
+            <p class="movie-genre">${movie.genre}</p>
+            <button class="movie-button ${buttonClass}" type="button"> 
+                ${buttonText}
+            </button>
+        </div>
+    `;
+
+    const button = card.querySelector('.movie-button');
+    // Обробник кліку для кнопки "В обране"
+    button.addEventListener('click', (event) => {
+        // !!! Запобігаємо переходу на сторінку деталізації
+        event.preventDefault(); 
+        event.stopPropagation(); 
+
+        if (favorites.some(f => f.movie_id === movie.id)) {
+            removeFavorite(movie.id);
+        } else {
+            addFavorite(movie.id);
+        }
+        
+        // Оновлюємо відображення
+        renderMovies();
+        updateFavoritesDisplay(); 
+    });
+
+    return card;
+}
