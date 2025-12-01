@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="uk">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Деталі фільму</title>
+  
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+        <nav class="nav">
+             <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+                    <img src="icon_mit.png" alt="icon" class="logo-icon"> 
+                    <span>Mitfilm</span>
+                </a>
+             </div>
+        </nav>
+    </header>
+
+    <main class="movie-detail">
+        <div id="loading" style="text-align:center; padding: 50px; font-size: 24px; color: #fff;">
+            Завантаження даних...
+        </div>
+
+        <div id="movie-content" style="display: none; padding-top: 20px;">
+            <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+                
+                <div id="api-poster-container" style="flex: 0 0 300px;"></div>
+
+                <div style="flex: 1; min-width: 300px;">
+                    <h1 class="page-title" id="api-title" style="margin-bottom: 20px;"></h1>
+                    
+                    <div class="movie-info-text" style="color: #ccc; line-height: 1.6;">
+                        <p><strong>Рік:</strong> <span id="api-year"></span></p>
+                        <p><strong>Рейтинг IMDb:</strong> <span id="api-rating" style="color: gold;"></span></p>
+                        <p><strong>Жанр:</strong> <span id="api-genre"></span></p>
+                        <p><strong>Країна:</strong> <span id="api-country"></span></p>
+                        <p><strong>Актори:</strong> <span id="api-actors"></span></p>
+                    </div>
+
+                    <h2 style="margin-top: 30px; font-size: 24px; color: white; margin-bottom: 10px;">Сюжет</h2>
+                    <p id="api-plot" style="color: #ddd; line-height: 1.6; text-align: justify;"></p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
+                <a href="index.html" class="filter-btn" style="text-decoration: none; display: inline-block; background-color: #333; color: white;">← Назад до списку</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+      <p>Mitfilm · 2025</p>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
