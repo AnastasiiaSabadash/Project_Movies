@@ -411,7 +411,7 @@ display: block;
 
 .filter-btn{
     background: transparent;
-    color: #554667;
+    color: #6366f1;
     border: none;
     border-radius: 8px;
     padding: 0.5rem 1rem;
@@ -421,7 +421,7 @@ display: block;
 
 .filter-btn:hover {
     color: #6366f1;
-    background: rgba(99, 102, 241, 0.1);
+    background:rgba(99, 102, 241, 0.1);
 }
 
 
@@ -435,6 +435,10 @@ display: block;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     z-index: 200;
+}
+
+.filter-section{
+    color: #554667;
 }
 
 .hidden {
