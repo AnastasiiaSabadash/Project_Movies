@@ -126,12 +126,12 @@ body::before {
 }
 
 .movie-card {
-    background: white;
+    background: #1b002b;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    border: 1px solid rgba(148, 163, 184, 0.1);
+    border: 1px solid rgb(242, 243, 244);
     display: flex;
     flex-direction: column;
 }
@@ -144,8 +144,7 @@ body::before {
 .movie-poster  {
     width: 100%;
     height: 320px;
-    background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
-    display: flex;
+    background: linear-gradient(135deg, #1b002b, #3e0857);
     align-items: center;
     justify-content: center;
     font-size: 3rem;
@@ -382,7 +381,7 @@ body::before {
     position: absolute;
     top: 70px;
     right: 20px;
-    background: #1a1a1a;
+    background: #444163;
     border: 1px solid #333;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -451,8 +450,8 @@ body::before {
 .year-input {
     width: 100%;
     padding: 8px;
-    background: #333;
-    border: 1px solid #444;
+    background: #535353;
+    border: none;
     color: white;
     border-radius: 4px;
     outline: none;
@@ -470,7 +469,7 @@ body::before {
 }
 
 #applyFiltersBtn {
-    background-color: #e50914; 
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
     color: white;
     border: none;
     flex: 1;
@@ -478,14 +477,11 @@ body::before {
     cursor: pointer;
     border-radius: 4px;
     font-weight: bold;
-}
-
-#applyFiltersBtn:hover {
-    background-color: #f40612;
+    transition: all 0.3s ease; 
 }
 
 #clearFiltersBtn {
-    background-color: #444;
+    background-color: #535353;
     color: white;
     border: none;
     flex: 1;
@@ -495,7 +491,40 @@ body::before {
 }
 
 #clearFiltersBtn:hover {
-    background-color: #555;
+    background-color: #535353;
+}
+
+/* ------------------------------------------- */
+/* ПЕРЕВИЗНАЧЕННЯ СТИЛЮ КНОПКИ "НАЗАД ДО СПИСКУ" */
+/* Використовує .filter-btn, але тільки всередині .movie-detail */
+/* ------------------------------------------- */
+.movie-detail .filter-btn {
+    /* Стилі для відповідності .add-favorite */
+    background: linear-gradient(135deg, #6366f1, #8b5cf6); /* Фіолетовий градієнт */
+    color: white;
+    
+    /* Перезаписуємо оригінальні властивості .filter-btn для великої кнопки */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px; 
+    padding: 0.5rem 1rem; 
+    margin-left: 0; 
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1rem; 
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ефект при наведенні курсора (Hover) */
+.movie-detail .filter-btn:hover {
+    background: linear-gradient(135deg, #5855eb, #7c3aed); /* Темніший градієнт */
+    transform: translateY(-2px); 
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4); 
 }
 
 /* MOVIE DETAIL STYLES */
