@@ -36,7 +36,7 @@ const sampleMovies = [
         description: 'Кейт — молода дівчина, яка працює ельфом у цілорічному різдвяному магазині в Лондоні. Вона постійно приймає неправильні рішення, зловживає алкоголем, свариться з рідними й не може знайти своє місце в житті після перенесеної важкої хвороби серця. Здається, що удача відвернулася від неї назавжди. Але все змінюється, коли вона випадково зустрічає Тома — загадкового, доброго і надзвичайно позитивного хлопця, який здається надто ідеальним, щоб бути реальним. Ця зустріч змушує Кейт повірити у різдвяне диво.'
     },
     { 
-        id: '8', title: 'Дюна', genre: 'Фантастика, Пригоди', year: 2021, rating: 8.0, poster: 'movies/Дюна.jpg', imdbID: 'tt1160419',
+        id: '8', title: 'Дюна', genre: 'Фантастика, Пригоди', year: 2021, rating: 8.1, poster: 'movies/Дюна.jpg', imdbID: 'tt1160419',
         description: 'Екранізація культового роману Френка Герберта. У далекому майбутньому людство розселилося по різних планетах, а влада належить могутнім аристократичним домам. Юний Пол Атрід, спадкоємець шляхетного роду, разом із родиною вирушає на Арракіс — найнебезпечнішу планету у Всесвіті. Тільки тут видобувають "прянощі" — безцінну речовину, що подовжує життя і дає можливість подорожувати крізь простір. Після підступної зради і знищення його дому, Пол тікає в пустелю до місцевих жителів фріменів, щоб прийняти свою долю і стати тим, хто змінить імперію назавжди.'
     },
     { 
@@ -216,7 +216,7 @@ function createMovieCard(movie, isFavorite = false, isFavoritesPage = false) {
             </h3>
             <div style="font-size: 13px; color: #aaa; margin-bottom: 5px; display: flex; justify-content: space-between;">
                 <span>${movie.year}</span>
-                <span style="color: gold;">★ ${movie.rating || 'N/A'}</span>
+                <span style="color: gold;">★ ${movie.rating}</span>
             </div>
             <p class="movie-genre" style="margin-bottom: 10px; font-size: 12px; color: #888; height: 30px; overflow: hidden;">
                 ${movie.genre}
@@ -382,7 +382,7 @@ async function loadMovieFromAPI() {
                  safeSet('api-actors', data.Actors);
             }
             
-            safeSet('api-rating', data.imdbRating);
+            safeSet('api-rating', localMovie ? localMovie.rating : data.imdbRating);
             safeSet('api-country', data.Country);
             
             // ВАЖЛИВО: КАРТИНКА ЛОКАЛЬНА
