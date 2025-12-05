@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="uk">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitfilm</title>
+
+  <link rel="icon" href="icon_mit.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="nav">
+        <div class="logo" id="site-title">
+            <img src="icon_mit.png" alt="icon" class="logo-icon">
+            <a href="index.html" style="text-decoration: none; color: inherit;"><span>Mitfilm</span></a>
+        </div>
+
+          <div class="search-filter-btn" id="searchBtn">
+            <img src="movies/icons8-search (1).svg" alt="search" class="search-icon">
+            <input type="text" placeholder="Search" class="search-input" id="searchInput">
+            <button class="filter-btn" id="filterBtn">Filters</button>
+          </div>
+
+          <div class="filters-window hidden" id="filtersWindow">
+            <div class="filter-section">
+                <div class="filter-header">Жанри</div>
+                <div class="genres-grid">
+                   <label class="option-button-label"><input type="checkbox" name="genre" value="Фантастика"> Фантастика</label>
+                   <label class="option-button-label"><input type="checkbox" name="genre" value="Драма"> Драма</label>
+                   <label class="option-button-label"><input type="checkbox" name="genre" value="Бойовик"> Бойовик</label>
+                   <label class="option-button-label"><input type="checkbox" name="genre" value="Пригоди"> Пригоди</label>
+                   <label class="option-button-label"><input type="checkbox" name="genre" value="Комедія"> Комедія</label>
+                   <label class="option-button-label"><input type="checkbox" name="genre" value="Кримінал"> Кримінал</label>
+                   <label class="option-button-label"><input type="checkbox" name="genre" value="Історичний"> Історичний</label>
+                   <label class="option-button-label"><input type="checkbox" name="genre" value="Мелодрама"> Мелодрама</label>
+                   <label class="option-button-label"><input type="checkbox" name="genre" value="Військовий"> Військовий</label>
+                   <label class="option-button-label"><input type="checkbox" name="genre" value="Спорт"> Спорт</label>
+                   <label class="option-button-label"><input type="checkbox" name="genre" value="Трилер"> Трилер</label>
+                   <label class="option-button-label"><input type="checkbox" name="genre" value="Фентезі"> Фентезі</label>
+                </div>
+            </div>
+
+            <div class="filter-header separator">Період виходу</div>
+            <div class="filter-row">
+                <label class="filter-label">
+                    Рік від:
+                    <input type="number" id="yearFrom" class="year-input" placeholder="1990" min="1900" max="2025">
+                </label>
+                <label class="filter-label">
+                    Рік до:
+                    <input type="number" id="yearTo" class="year-input" placeholder="2025" min="1900" max="2025">
+                </label>
+            </div>
+
+            <div class="filter-header">Рейтинг IMDb</div>
+            <div class="filter-section">
+                 <input type="number" id="ratingFrom" class="year-input" placeholder="Наприклад 7.0" step="0.1" min="1" max="10">
+            </div>
+
+            <div class="filter-actions">
+                <button id="applyFiltersBtn">Застосувати</button>
+                <button id="clearFiltersBtn">Скинути</button>
+            </div>
+          </div>
+         
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Movies</a></li>
+          <li><a href="obrane.html" class="nav-link">Favorites</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div id="movies-page">
+        <h1 class="page-title" id="movies-title">Movies</h1>
+        <div class="movies-grid" id="movies-grid"></div>
+      </div>
+    </main> 
+
+    <footer class="footer">
+      <p id="footer-text">Mitfilm · 2025</p>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

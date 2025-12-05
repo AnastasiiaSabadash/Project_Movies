@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="uk">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitfilm</title>
+
+  <link rel="icon" href="icon_mit.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+ 
+    <!-- <script src="application/json"></script> -->
+  <script src="/scripts.js"></script>
+</head>
+
+  <body>
+  <div class="container">
+    <header class="header">
+      <nav class="nav">
+
+        <div class="logo" id="site-title">
+           <img src="icon_mit.png" alt="icon" class="logo-icon">
+            <span>Mitfilm</span>
+        </div>
+
+          <div class="search-filter-btn" id="searchBtn">
+            <img src="/Film/movies/icons8-search (1).svg" alt="search" class="search-icon">
+            <input type="text" placeholder="Search" class="search-input" id="searchInput">
+            <button class="filter-btn" id="filterBtn">Filters</button>
+          </div>
+
+          <div class="filters-window hidden" id="filtersWindow">
+            <div class="filter-section">
+            <div class="filter-header">Genre</div>
+               <label class="option-button-label">
+                <input type="checkbox" name="genre" value="фантастика"> Фантастика</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="антиутопія"> Антиутопія</label>
+                <label class="option-button-label"> 
+                <input type="checkbox" name="genre" value="драма"> Драма</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="мелодрама"> Мелодрама</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="трилер"> Трилер</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="бойовик"> Бойовик</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="пригоди"> Пригоди</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="комедія"> Комедія</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="кримінал"> Кримінал</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="фентезі"> Фентезі</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="екшн"> Екшн</label>
+                <label class="option-button-label">   
+                <input type="checkbox" name="genre" value="історичний"> Історичний</label>
+            </div>
+            <div class="filter-header">Year</div>
+                <div class="filter-section">
+                  <input type="number" id="yearFrom" class="year-input" placeholder="Year">
+                </div>
+            <button class="filter-btn" id="applyFiltersBtn">Apply Filters</button>
+            <button class="filter-btn" id="clearFiltersBtn">Clear Filters</button>
+          </div>
+         
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Movies</a></li>
+            <li><a href="obrane.html" class="nav-link">Favorites</a></li>
+        </ul>
+      </nav>
+    </header>
+
+     <main class="main">
+      <div id="movies-page">
+        <h1 class="page-title" id="movies-title">Щасливого Різдва</h1>
+        <div class="movies-grid" id="movies-grid"></div>
+      </div>
+    </main> 
+
+ <main class="movie-detail">
+    <!-- <img src="movies/Той,що біжить лабіринтом.jpg" alt="Той, що біжить лабіринтом" class="movie-poster"> -->
+    <h2 class="movie-genre">Жанри: комедія,фентезі,драми,мелодрами</h2>
+    <h2 class="movie-genre">Рік: 2019 </h2>
+    <h2 class="movie-genre">Країни: Велика Британія,США</h2>
+    <h2 class="movie-genre">Сюжет</h2>
+ <p class="movie-description">
+  <span class="short-text">Кейт страждає від безлічі комплексів. Робота в костюмі ельфа на честь</span>
+  <span class="full-text" style="display:none;">
+   Кейт страждає від безлічі комплексів. Робота в костюмі ельфа на честь майбутнього Різдва в одному з магазинів явно не додає дівчині впевненості в собі. Через занижену самооцінку головна героїня часто приймає помилкові рішення. Несподівано в її житті з’являється симпатичний хлопець, на ім'я Том. Під час спілкування з’ясовується, що новий знайомий привабливий не тільки зовні. Хто ж він — подарунок напередодні свята чи тимчасовий співрозмовник?
+Сюжет романтичної комедії Щасливого Різдва є відсиланням до найвідомішої композиції англійського попдуету Wham!, де починав свою кар’єру Джордж Майкл. Музичний супровід фільму примітний тим, що до його складу увійшли пісні співака, які раніше ніде не афішували. Актриса Емма Томпсон зіграла роль Аделії, виступила співпродюсером і співавтором сценарію. Знімальний процес тривав 2,5 місяці та був завершений на День Святого Валентина 2019 року.
+За тиждень до прем’єри стрічки було заплановано вихід однойменної книжки, у якій висвітлено есе про значення Різдва для суспільства. Своєю персональною думкою діляться не лише акторки мелодрами Емілія Кларк та Емма Томпсон, а й низка інших знаменитостей, включно з Меріл Стріп. Зазначимо, що написання сценарію до ліричної комедії затягнулося на понад 7 років.
+    </span>
+  <button class="read-more">...</button>
+ </p>
+    <button><a href="index.html">← Back to movies</a></button>
+  </main>
+
+     <footer class="footer">
+      <p id="footer-text">Mitfilm · 2025</p>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+   <!-- <script src="scripts.js"></script> -->
+  </body>
+</html>

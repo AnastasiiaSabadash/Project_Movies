@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="uk">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitfilm</title>
+
+  <link rel="icon" href="icon_mit.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+ 
+    <!-- <script src="application/json"></script> -->
+  <script src="/scripts.js"></script>
+</head>
+
+  <body>
+  <div class="container">
+    <header class="header">
+      <nav class="nav">
+
+ <div class="logo" id="site-title">
+           <img src="icon_mit.png" alt="icon" class="logo-icon">
+            <span>Mitfilm</span>
+        </div>
+
+          <div class="search-filter-btn" id="searchBtn">
+            <img src="/Film/movies/icons8-search (1).svg" alt="search" class="search-icon">
+            <input type="text" placeholder="Search" class="search-input" id="searchInput">
+            <button class="filter-btn" id="filterBtn">Filters</button>
+          </div>
+
+          <div class="filters-window hidden" id="filtersWindow">
+            <div class="filter-section">
+            <div class="filter-header">Genre</div>
+               <label class="option-button-label">
+                <input type="checkbox" name="genre" value="фантастика"> Фантастика</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="антиутопія"> Антиутопія</label>
+                <label class="option-button-label"> 
+                <input type="checkbox" name="genre" value="драма"> Драма</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="мелодрама"> Мелодрама</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="трилер"> Трилер</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="бойовик"> Бойовик</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="пригоди"> Пригоди</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="комедія"> Комедія</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="кримінал"> Кримінал</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="фентезі"> Фентезі</label>
+                <label class="option-button-label">
+                <input type="checkbox" name="genre" value="екшн"> Екшн</label>
+                <label class="option-button-label">   
+                <input type="checkbox" name="genre" value="історичний"> Історичний</label>
+            </div>
+            <div class="filter-header">Year</div>
+                <div class="filter-section">
+                  <input type="number" id="yearFrom" class="year-input" placeholder="Year">
+                </div>
+            <button class="filter-btn" id="applyFiltersBtn">Apply Filters</button>
+            <button class="filter-btn" id="clearFiltersBtn">Clear Filters</button>
+          </div>
+         
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Movies</a></li>
+            <li><a href="obrane.html" class="nav-link">Favorites</a></li>
+        </ul>
+      </nav>
+    </header>
+
+     <main class="main">
+      <div id="movies-page">
+        <h1 class="page-title" id="movies-title">Кінгсмен:Золоте кільце</h1>
+        <div class="movies-grid" id="movies-grid"></div>
+      </div>
+    </main> 
+
+ <main class="movie-detail">
+    <!-- <img src="movies/Той,що біжить лабіринтом.jpg" alt="Той, що біжить лабіринтом" class="movie-poster"> -->
+    <h2 class="movie-genre">Жанри: бойовик, комедія, пригоди, кримінал</h2>
+    <h2 class="movie-genre">Рік: 2017 </h2>
+    <h2 class="movie-genre">Країни: Велика Британія,США</h2>
+    <h2 class="movie-genre">Сюжет</h2>
+ <p class="movie-description">
+  <span class="short-text">Фільм Kingsman: Золоте кільце — бойовик 2017 року від режисера Меттью Вона, що продовжує історію таємної британської організації Kingsman. Несподіваний напад знищує</span>
+  <span class="full-text" style="display:none;">
+  Фільм Kingsman: Золоте кільце — бойовик 2017 року від режисера Меттью Вона, що продовжує історію таємної британської організації Kingsman. Несподіваний напад знищує їхній штаб, а на авансцену виходить лиходійка Поппі, яка переховується у своєму ретроселищі Poppy Land, збудованому в джунглях Камбоджі. Вона має підступний план із використанням смертоносної зброї. Щоб зупинити загрозу, Еґґсі та Мерлін об'єднуються із союзниками зі США — шпигунською організацією Statesman, чиї агенти мають імена коктейлів і ковбойські звички.
+Ключові ролі виконали всесвітньо відомі актори: Терон Еджертон зіграв спритного Еґґсі, Колін Ферт повернувся до своєї ролі Гаррі Гарта, а Джуліанна Мур втілила харизматичну лиходійку Поппі. Зоряний склад доповнили Педро Паскаль, Ченнінг Татум і Голлі Беррі, а в одному з яскравих епізодів з'явився сам Елтон Джон.
+Теми дружби, вірності та протистояння добра і зла проходять через весь фільм. Унікальний стиль Меттью Вона та сучасний погляд на історію про шпигунів роблять фільм Kingsman: Золоте кільце яскравим прикладом жанру. Картина, наповнена динамічним екшеном і фірмовим гумором, неминуче приверне увагу шанувальників шпигунських бойовиків і поціновувачів видовищного кіно.
+
+    </span>
+  <button class="read-more">...</button>
+ </p>
+    <button><a href="index.html">← Back to movies</a></button>
+  </main>
+
+     <footer class="footer">
+      <p id="footer-text">Mitfilm · 2025</p>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+   <!-- <script src="scripts.js"></script> -->
+  </body>
+</html>
